@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Homework</title>
+
+		<style type="text/css">
+			
+			body{
+				height: 100vh;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.container{
+				width: 500px;
+				background: #e4e4e4;
+			}
+
+			.div1{
+				width: 300px;
+				height: 100px;
+				background: linear-gradient(black,grey);
+				box-shadow: -5px 0 10px black;
+
+				margin: auto;
+
+				perspective: 500px;
+				/*perspective-origin: right bottom;*/
+
+				position: relative;
+			}
+
+			.div2{
+				width: 180px;
+				height: 100px;
+				background: linear-gradient(black,grey);
+				box-shadow: -5px 0 8px black;
+
+				transform: rotateX(45deg);
+
+				padding: 60px;
+
+				position: absolute;
+				left: 0%;
+				top: -150%;
+
+				z-index: 1;
+			}
+
+			.div3{
+				width: 60px;
+				height: 100px;
+				background: white;
+				border: 1px solid black;
+				box-shadow: -5px 0 10px black;
+
+
+				position: absolute;
+				left: 29.5%;
+				top: -1%;				
+			}
+
+			.div3:hover{
+				transform: rotateY(-45deg);
+				transform-origin: 0 50% ;
+			}
+
+			.div4{
+				width: 60px;
+				height: 100px;
+				background: white;
+				border: 1px solid black;
+				box-shadow: 5px 0 10px black;
+
+				position: relative;
+				position: absolute;
+				left: 50%;
+				top: 4%;
+
+				transform: rotateY(45deg);
+			}
+
+			.div4:hover{
+				/*transform-origin: 100%;*/
+				transform: rotateY(0deg);
+
+				position: absolute;
+				top: 0;
+			}
+
+
+		</style>
+	</head>
+	<body>
+
+		<div class="container">
+			
+			<div class="div1">DIV 1
+
+				<div class="div2">DIV 2</div>
+				
+				<div class="div3">DIV 3</div>
+
+				<div class="div4">DIV 4</div>
+
+
+			</div>
+
+		</div>
+		
+	</body>
+</html>
