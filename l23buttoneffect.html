@@ -2,11 +2,12 @@
 <html>
 <head>
 	<title>Button Effect</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<style type="text/css">
 		
 		body{
+			font-family: sans-serif;
 			height: 100vh;
 
 			display: flex;
@@ -17,7 +18,7 @@
 		a{
 			width: 200px;
 			text-decoration: none;
-			background: green;
+			background-color: green;
 			color: #fff;
 			font-size: 24px;
 			text-align: center;
@@ -26,8 +27,8 @@
 			position: relative;
 		}
 
-		/* a::before{
-			content: 'Hover Me';
+		/*a::before{
+			content: 'Hover Me Smile';
 			width: 100%;
 			height: 100%;
 			background-color: green;
@@ -41,24 +42,28 @@
 			justify-content: center;
 			align-items: center;
 
-			opacixty: 0;
+			opacity: 0;
 
 			transition: all 0.5s;
 		}
 
-		/*a:hover:before{
+		a:hover::before{
 			opacity: 1;
+		}
+
+		a:hover{
+			color: green;
 		}*/
 
 		a span{
 			position: relative;
 
-			transition: all .5s;
+			transition: padding-left .5s;
 		}
 
-		a span::after{
+		a span::before{
 			content: '\f118';
-			font-family: 'Font Awesome 5 Free';
+			font-family:"Font Awesome 5 Free";
 
 			position: absolute;
 			right: 0;
@@ -69,12 +74,12 @@
 			transition: opacity .5s;
 		}
 
-		a:hover span::after{
+		a:hover span::before{
 			opacity: 1;
 		}
 
 		a:hover span{
-			padding-right: 30px;
+			padding-left: 30px;
 		}
 
 
