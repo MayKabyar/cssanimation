@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hover Me</title>
+	<title>Hover Effect</title>
 	<style type="text/css">
 		
 		body{
@@ -22,6 +22,37 @@
 			border: none;
 			border-radius: 10px;
 			cursor: pointer;
+
+			position: relative;
+
+			transition: all 1s; 
+		}
+
+		.btn .line{
+			width: 5px;
+			height: 5px;
+			background-color: transparent;
+			border-radius: 50%;
+
+			transform: translate(-50%);
+
+			position: absolute;
+			left: 50%;
+			top: 0;
+
+			transition: all 0.5s;
+		}
+
+		.btn:hover .line{
+			width: 200px;
+			height: 80px;
+
+			border-radius: 10px;
+			border-bottom: 2px solid #f4f4f4;
+		}
+
+		.btn:hover{
+			background-color: #555;
 		}
 
 	</style>
