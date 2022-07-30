@@ -23,10 +23,13 @@
 			height: 150px;
 			background-color: orange;
 
-			/*animation-name: myani;*/
-			animation-duration: 3s;
+			animation-name: myrules;
+			animation-duration: 5s;
 
-			animation-fill-mode: forwards;
+			/*animation-fill-mode: backwards;*/
+			/*animation-fill-mode: forwards;*/
+
+			animation-delay: 3s;
 
 		}
 
@@ -52,9 +55,9 @@
 			}
 		}
 
-		@keyframes myani{
+		@keyframes myrules{
 			0%{
-				background-color: violet;
+				background-color: red;
 				transform: translate(0);
 			}
 
@@ -70,7 +73,7 @@
 
 			75%{
 				background-color: green;
-				transform: translate(0,300px);
+				transform: translate(0px,300px);
 			}
 
 			100%{
